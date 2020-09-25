@@ -1,0 +1,3 @@
+#!/bin/bash
+#as --64 "$@"
+/usr/bin/as "$@"

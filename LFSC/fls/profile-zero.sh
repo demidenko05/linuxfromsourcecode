@@ -1,0 +1,12 @@
+export PATH="/usr/bin:/usr/local/bin:/bin:/sbin"
+export HISTCONTROL=ignoreboth:erasedups
+export USER=root
+export LOGNAME=root
+export HOSTNAME=LFSC16
+export HISTSIZE=1000
+export HISTFILESIZE=1000
+export PAGER='/usr/bin/less'
+export EDITOR='/usr/bin/nano'
+export PS1="LFSC16@root:\w\$ "
+export HOME=/root
+export LC_ALL=C

@@ -1,0 +1,14 @@
+#find device
+xinput list
+#list touchpad props:
+xinput list-props [dev-num]
+#set props see help
+#man about properties:
+man SYNAPTICS
+#edit non-saved props:
+xinput set-prop [dev-num] [prop-num] [prop-val]
+#edit saved props:
+nano [path]/X11/xorg.conf.d/40-libinput.conf
+#TODO lock when typing
+#lock tapping manually - edit ~/.config/openbox/lxde-rc.xml to invoke xinput command, see file outside
+#run openbox --reconfigure to apply edited lxde-rc.xml

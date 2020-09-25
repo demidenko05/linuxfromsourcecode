@@ -1,0 +1,38 @@
+#PCManFM settings:
+lxterminal %s
+cp /etc/profile ~/.bashrc
+
+#keyboard: create config file:
+localectl --no-convert set-x11-keymap us,ru pc105 grp:alt_shift_toggle
+then move to /usr/share/X11/
+
+#alsa: see alsai.sh, first two command already invoked!:
+#alsactl init
+#make /var/lib/asound.state:
+alsactl store
+systemctl start alsa-restore.service
+systemctl status alsa-restore.service
+#set volume:
+alasmixer
+speaker-test -c 2
+#if wrong card, then set default card number:
+#get number:
+aplay -l
+#e.g.:
+card 0: HDMI...
+...
+card 1: PCH... 
+#set number:
+nano /etc/asound.conf
+#e.g. #1
+pcm.!default {
+    type hw
+    card 1
+}
+
+ctl.!default {
+    type hw
+    card 1
+}
+
+#you can add lxpanel's volume control after alsa sound-test passed

@@ -615,6 +615,13 @@ cp ../../fls/pam.d/lxdm /etc/pam.d
 chown root:root /etc/pam.d/lxdm
 reboot
 
+#bsdict and bsplay:
+install additional libogg and libvorbis from:
+https://xiph.org/downloads/ libogg-1.3.4.tar.xz then libvorbis-1.3.7.tar.gz
+just unpack them, change into their dirs, and run generic install:
+sh ../../generic.sh
+then download bsdict and bsplay from https://github.com/demidenko05/bsplay[bsdict] and install them according to their readme.txt 
+
 #see instructions in admin folder for farther setup keyboard, touchpad, sound...
 
 #All binaries will be stripped during installation, so if you plan to debug an application, then disable stripping for it.

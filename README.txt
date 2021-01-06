@@ -601,7 +601,7 @@ https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.3/   libvdpau-1.3  .bz
 https://www.alsa-project.org/files/pub alsa-lib-1.2.2 and alsa-utils-1.2.2
 https://www.libsdl.org/release/SDL2-2.0.12.tar.gz.sig
 https://github.com/libass/libass/archive/   libass- 0.14.0.tar.gz   <- subtitles
-https://ffmpeg.org/releases/ffmpeg-4.2.2.tar.xz.asc <- audio-video codecs, player...
+https://ffmpeg.org/releases/ffmpeg-4.2.3.tar.xz.asc <- audio-video codecs, player...
 #fonts:
 https://sourceforge.net/projects/dejavu or https://dejavu-fonts.github.io dejavu-fonts-2.37.tar.bz2
 
